@@ -1,5 +1,5 @@
 
-import React,{useEffect,useState,useMemo} from 'react';
+import React from 'react';
 import Test2 from "./Test2"
 
 const App =()=> {
@@ -12,4 +12,4 @@ const App =()=> {
   );
 }
 
-export default React.memo(App);
+export default App;
