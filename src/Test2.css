@@ -1,0 +1,170 @@
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .flex-left {
+    /* width: 25%; */
+    /* width:auto; */
+    width: 50vh;
+    height: 100vh;
+    margin: 5px;
+    padding: 5px;
+    background-color: #7AC4B5;
+    border: 1px solid #7AAEC4;
+    overflow: scroll;
+  }
+  
+  .flex-right {
+    width: 100%;
+    height: 100vh;
+    margin: 5px;
+    padding: 5px;
+    background: linear-gradient(to bottom, #14a76c,#7AC4B5);
+    border: 1px solid #7AAEC4;
+  }
+  
+  
+  .delete{
+       font-size: 5px;
+       font-family: serif;
+       height : auto;
+       width: auto;
+       border : 1px solid #aaa;
+       box-shadow: 1px 1px 1px #aaa;
+       float: right;
+       background-color: #DCDCDC;
+       
+     
+  }
+  
+  .card {
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    justify-content: center;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .wrapper {overflow: auto;}
+  
+ 
+  
+  /* Custom Defined scroll bar */
+  /* width */
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #14a76c; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #14a76c; 
+  }
+  div {
+    max-width: 100%;
+    overflow-x: hidden !important;
+}
+
+  #menulist {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menuitems {
+    border-radius: 4px;
+    list-style-type: none;
+    margin: 4px;
+    padding: 2px;
+    height:auto;
+    justify-content: left;
+  }
+
+  .contents{
+    font-size:13px;
+    font-family: serif;
+    margin-top: 10px;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
+    border:1px solid  rgba(0,0,0,0.2);
+    height: auto;
+    word-wrap: break-word;
+  }
+  
+  
+  /*************************************************************************************************/
+  
+  #leftsidebar {
+    float: none;
+    width: auto;
+  }
+  
+  #menulist {
+    margin: 0;
+    padding: 0;
+  }
+
+  
+  .list:active {
+    background-color: #14a76c; 
+}
+
+
+  
+  @media screen and (min-width: 480px) {
+    #leftsidebar {width: 300px; float: left; height:auto;}
+   
+    /* #main {margin-left: 216px;} */
+  }
+
+
+  .right-content{
+    font-size: 16px;
+    font-family: serif;
+    font-style: oblique;
+    font-weight: bold;
+  }
+
+  input:focus{
+    outline: none;
+   }
+
+   /* to place search icon inside input box */
+   .search {
+    position: relative;
+    color: #aaa;
+    font-size: 14px;
+    font-family: serif; 
+  }
+  
+  .search input {
+    width: 90%;
+    font-family: serif; 
+    height: 20px;
+    background: #fcfcfc;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+  }
+  
+  .search input {
+    text-indent: 32px;
+  }
+  
+  .search .fa-search {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+  }

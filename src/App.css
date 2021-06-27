@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,58 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+/* 
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.main{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 20%;
+}
+.contents{
+  border:1px solid black;
+  height: auto;
+}
+#m1{
+  width: 50%;
+}
+#m2{
+  width:50%;
+}
+
+li a:hover {
+  display: table-cell;
+  vertical-align: middle;
+  height: auto;
+  padding: 1%;
+  padding-right: 20px;
+  padding-left: 28px;
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+   
+} 
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+} */
+
+/* li.active>a {
+  background-color: #C0C0C0;
+  color: green;
+} */
+
+
+
+.deletebutton{
+  /* float:right;
+  position: absolute; */
+/* align-items: flex-end; */
+
 }
