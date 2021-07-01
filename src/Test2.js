@@ -7,17 +7,17 @@ import './Test2.css';
 const Test2 = () => {
 
     // Declaration of variable 
-    const [userData, getuserData] = useState([]);
+    const [userData, setUserData] = useState([]);
     const [gettemp, settemp] = useState([]);
-    const [filteruserData, filtergetuserData] = useState({});
-    const [userDetails, setUserDetails] = useState("")
+    const [filteruserData, filtersetuserData] = useState({});
+
   
 
 
     useEffect(() => {
         axios.get('data/userdata.json').then((res) => {
-            console.log(res['data'])
-            getuserData(res['data']);
+          //  console.log(res['data'])
+          setUserData(res['data']);
             settemp(res['data'])
         }).catch((e) => {
             console.log('e', e)
@@ -32,9 +32,9 @@ const Test2 = () => {
         let temp = userData.filter((res) => {
             return res.title.toLowerCase().includes(value.toLowerCase())
         })
-        getuserData(temp);
+        setUserData(temp);
         if (value === "") {
-            getuserData(gettemp);
+            setUserData(gettemp);
 
         }
 
@@ -49,10 +49,9 @@ const Test2 = () => {
         let temp = userData.find((resp) => {
             return resp.id === id;
         });
-        console.log("tempppp", temp.person)
-        setUserDetails(temp.person)
-        filtergetuserData(temp);
-        console.log("get person", filteruserData)
+      //  console.log("tempppp", temp)
+        filtersetuserData(temp);
+        console.log("filteruserData", filteruserData)
     }
 
 
@@ -64,7 +63,8 @@ const Test2 = () => {
             return res.id !== id;
         });
         // alert('sure you want to delete')
-        getuserData(temp);
+        filtersetuserData({});
+        setUserData(temp);
 
     }
 
